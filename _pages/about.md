@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student | The Francis Crick Institute, The Institute for Cancer Research, Imperial College London
+subtitle: PhD Student | University of California Berkeley
 
 profile:
   align: right
