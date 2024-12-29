@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student | University of California Berkeley
+subtitle: PhD Student | Bioengineering | University of California Berkeley
 
 profile:
   align: right
@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a first-year Convergence Science PhD student funded by Cancer Research UK, based at the Francis Crick 
+I am a fifth-year Bioengineering PhD student funded by Cancer Research UK, based at the Francis Crick 
 Institute and Imperial College London. Working under the guidance of Prof. Samra Turajilic and Dr. Guang Yang,
 my research focuses on developing artificial intelligence models to analyse haematoxylin and eosin (H&E) whole 
 slide images from the TRACERx Renal cohort. By automating this analysis, my goal is to facilitate downstream 
