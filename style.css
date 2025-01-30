@@ -7,12 +7,17 @@
   font-family: Arial, sans-serif;
 }
 /* Body styling */
+
+body {
+  min-height: 100vh; /* Ensures it covers the entire viewport */
+}
+
 html, body {
-  height: 100%; /* Ensure the background covers the full viewport */
+  height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb);
-  background-attachment: fixed; /* Keeps the gradient fixed while scrolling */
+  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb) !important;
+  background-attachment: fixed !important;
 }
 
 /* Container to center content */
