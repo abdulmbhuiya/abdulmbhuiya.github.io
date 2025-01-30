@@ -6,25 +6,23 @@
   box-sizing: border-box; 
   font-family: Arial, sans-serif;
 }
-/* Body styling */
 
-body {
-  min-height: 100vh; /* Ensures it covers the entire viewport */
-}
+/* Body styling */
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb) !important;
+  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb) !important;
   background-attachment: fixed !important;
 }
+
 
 /* Container to center content */
 .container {
   width: 100%;
   max-width: 100%;
-  background: transparent !important; /* Ensures the gradient is visible */
+  background: transparent !important;
 }
 
 /* Header + Nav */
@@ -38,8 +36,8 @@ header {
 header h1 {
   margin-bottom: 10px;
   padding-bottom: 5px;
-  font-size:30px;
-  color: #060404;
+  font-size:50px;
+  color: #ffffff;
   border-bottom: 1px #0066cc;
 }
 
@@ -77,12 +75,12 @@ div {
 
   /*background-color: rgb(26, 58, 69);*/
   text-align: left;
+  background: transparent !important;
  
 }
 
 .div1{
-  display: block;
-  background-color: rgb(62, 26, 123);
+  background: transparent !important;
   text-align: center;
   font-size: 24px;
 
@@ -110,18 +108,17 @@ div {
 }
 
 .div4 {
-  display: block; width: 70%;
-  padding: 5px 10%;
-  background-color: rgb(244, 245, 246);
+  padding: 5px 5%;
   text-align: left;
   font-size: 18px;
+  font-family: serif;
   color: rgb(2, 18, 18);
 
 }
 
 .summary1{
   
-  background-color: #f5f4f7;
+
   padding-left: 6%;
   cursor: pointer;
   font-size: 20px;
@@ -135,7 +132,6 @@ div {
  .side-tab {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 100%; /* Set the width of the sidebar */
-  background-color: #f1f4f7;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -146,7 +142,7 @@ div {
 
 .side-tab a {
   text-decoration: none;
-  color: rgb(13, 13, 35);
+  color: rgb(204, 238, 242);
   margin: 5px 4%;
   font-size: 25px;
   text-align: center;
@@ -156,7 +152,7 @@ div {
 }
 
 .side-tab a:hover {
-  background-color: #e5e8eb;
+  background-color: #06223d;
 }
 
 .side-tab .logo {
@@ -167,7 +163,7 @@ div {
 .section {
   padding: 10px 10px;
   margin: 0px 0;
-  border-bottom: 1px solid #ddd;
+  background: transparent !important;
 }
 
 .section h2 {
@@ -185,12 +181,12 @@ div {
 /*Creating two sections */
 .column {
   float: left;
-  background: transparent !important; /* Ensures the gradient is visible */ ;
+  
 }
 
 .left {
  
-  width: 25%;
+  width: 30%;
   position: fixed;
   height: auto;
   
@@ -204,9 +200,11 @@ div {
 }
 
 .right {
-  width: 75%;
+  width: 70%;
   height: 100%;
-  margin-left: 25%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 30%;
   overflow: auto;
   
   
