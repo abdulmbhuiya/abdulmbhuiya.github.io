@@ -180,7 +180,8 @@ div {
 
 /*Creating two sections */
 .column {
-  float: left;
+  display: flex;  /* Use flexbox to avoid float-based overlap */
+  height: 100vh;  /* Full viewport height */
   
 }
 
