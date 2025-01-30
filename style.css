@@ -187,14 +187,9 @@ div {
 .left {
   width: 30%;
   height: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
   position: fixed;
   overflow-y: auto;
-  /* Hide scrollbar in Webkit-based browsers (Chrome, Safari) */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE & Edge */
+  
 
   
 }
