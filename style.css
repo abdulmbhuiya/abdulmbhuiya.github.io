@@ -187,10 +187,8 @@ div {
 .left {
   width: 30%;
   position: fixed;
-  
-  
+  overflow:auto;
 
-  
 }
 
   
