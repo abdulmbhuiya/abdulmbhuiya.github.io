@@ -6,15 +6,12 @@
   box-sizing: border-box; 
   font-family: Arial, sans-serif;
 }
-#grad1 {
-  height: 200 px;
-  background-image: linear-gradient(to right, #154360 , #21618c, #2e86c1 , #5dade2, #aed6f1, #ebf5fb, #ebf5fb);
-}
 /* Body styling */
 body {
-  background-color: linear-gradient(to right, #154360 , #21618c, #2e86c1 , #5dade2, #aed6f1, #ebf5fb, #ebf5fb);
-  height: 200 px;
-  line-height: 1.6;
+  background: linear-gradient(to right, #154360 , #21618c, #2e86c1 , #5dade2, #aed6f1, #ebf5fb, #ebf5fb);
+  height: 100vh; /* Ensures full viewport height */
+  margin: 0;
+  padding: 0;
 }
 
 /* Container to center content */
