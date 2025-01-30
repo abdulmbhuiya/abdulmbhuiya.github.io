@@ -185,17 +185,22 @@ div {
 }
 
 .left {
- 
-  width: 30%;
+   width: 30%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
   position: fixed;
-  height: auto;
-  
-  
+  overflow-y: auto;
+  /* Hide scrollbar in Webkit-based browsers (Chrome, Safari) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
 
   
-  
-  
-  
+}
+.left::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
   
 }
 
