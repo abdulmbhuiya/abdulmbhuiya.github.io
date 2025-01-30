@@ -7,18 +7,19 @@
   font-family: Arial, sans-serif;
 }
 /* Body styling */
-body {
-  background: linear-gradient(to right, #154360 , #21618c, #2e86c1 , #5dade2, #aed6f1, #ebf5fb, #ebf5fb);
-  height: 100vh; /* Ensures full viewport height */
+html, body {
+  height: 100%; /* Ensure the background covers the full viewport */
   margin: 0;
   padding: 0;
+  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb);
+  background-attachment: fixed; /* Keeps the gradient fixed while scrolling */
 }
 
 /* Container to center content */
 .container {
   width: 100%;
   max-width: 100%;
-  background: #f0f3f5;
+  background: transparent !important; /* Ensures the gradient is visible */
 }
 
 /* Header + Nav */
@@ -179,7 +180,7 @@ div {
 /*Creating two sections */
 .column {
   float: left;
-  background-color: #f1f4f7 ;
+  background: transparent !important; /* Ensures the gradient is visible */ ;
 }
 
 .left {
