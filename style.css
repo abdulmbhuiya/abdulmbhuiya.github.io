@@ -3,14 +3,17 @@
 /* Basic reset */
 * {
   
-  box-sizing: border-box;
+  box-sizing: border-box; 
   font-family: Arial, sans-serif;
 }
-
+#grad1 {
+  height: 200 px;
+  background-image: linear-gradient(to right, #154360 , #21618c, #2e86c1 , #5dade2, #aed6f1, #ebf5fb, #ebf5fb);
+}
 /* Body styling */
 body {
-  background: #eef0f0;
-  color: #333;
+  background-color: linear-gradient(to right, #154360 , #21618c, #2e86c1 , #5dade2, #aed6f1, #ebf5fb, #ebf5fb);
+  height: 200 px;
   line-height: 1.6;
 }
 
@@ -26,7 +29,7 @@ header {
   background: #191515;
   padding: 20px;
   text-align: left;
-  border-bottom: 1px solid #ccc;
+  
 }
 
 header h1 {
@@ -34,6 +37,7 @@ header h1 {
   padding-bottom: 5px;
   font-size:30px;
   color: #060404;
+  border-bottom: 1px #0066cc;
 }
 
 
@@ -43,7 +47,6 @@ header h1 {
 
 h2 {
   margin-bottom: 10px;
-  border-top: 4px solid #0066cc;
   padding-bottom: 2px;
   color: #050606;
   font-size: 20px;
@@ -68,8 +71,7 @@ footer {
 
 
 div {
-  display: block;
-  border: 5px outset rgb(252, 249, 249);
+
   /*background-color: rgb(26, 58, 69);*/
   text-align: left;
  
@@ -105,24 +107,22 @@ div {
 }
 
 .div4 {
-  display: block; width: 100%;
-  width:100%;
-  border: 5px outset rgb(242, 6, 6);
-  background-color: rgb(30, 38, 39);
+  display: block; width: 70%;
+  padding: 5px 10%;
+  background-color: rgb(244, 245, 246);
   text-align: left;
   font-size: 18px;
-  color: rgb(227, 248, 248);
+  color: rgb(2, 18, 18);
 
 }
 
 .summary1{
   
-  background-color: #330860;
+  background-color: #f5f4f7;
   padding-left: 6%;
-  border-style:solid; ;
   cursor: pointer;
   font-size: 20px;
-  color: rgb(243, 248, 249);
+  color: rgb(2, 26, 30);
   
   
   
@@ -144,10 +144,11 @@ div {
 .side-tab a {
   text-decoration: none;
   color: rgb(13, 13, 35);
-  margin: 5px 50px;
-  font-size: 20px;
+  margin: 5px 4%;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
   padding: 5px 90px;
-  border-top-style: solid;
   transition: background-color 0.3s ease;
 }
 
@@ -181,13 +182,15 @@ div {
 /*Creating two sections */
 .column {
   float: left;
+  background-color: #f1f4f7 ;
 }
 
 .left {
  
-  width: 20%;
+  width: 25%;
   position: fixed;
-  zoom:60%;
+  height: auto;
+  
   
 
   
@@ -198,9 +201,9 @@ div {
 }
 
 .right {
-  width: 80%;
+  width: 75%;
   height: 100%;
-  margin-left: 20%;
+  margin-left: 25%;
   overflow: auto;
   
   
@@ -228,4 +231,11 @@ div {
 }
 .role {
     font-weight: bold;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
