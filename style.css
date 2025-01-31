@@ -180,20 +180,27 @@ div {
 
 /*Creating two sections */
 .column {
-  display: flex;  /* Use flexbox to avoid float-based overlap */
-  height: 100vh;  /* Full viewport height */
+  float: left;
   
 }
 
 .left {
   width: 30%;
-  height: 100vh; 
+  height: 100vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
   position: fixed;
+  overflow-y: auto;
+  /* Hide scrollbar in Webkit-based browsers (Chrome, Safari) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+
   
-
 }
-
-
+.left::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
 
 .right {
   width: 70%;
@@ -202,7 +209,6 @@ div {
   padding-right: 5%;
   margin-left: 30%;
   overflow: auto;
-
   
   
   
@@ -237,4 +243,3 @@ div {
   margin-right: auto;
   
 }
-
