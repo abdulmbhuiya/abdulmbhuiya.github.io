@@ -189,7 +189,7 @@ div {
   width: 30%;
   height: 100vh; 
   position: fixed;
-  overflow:auto;
+  
 
 }
 
@@ -201,6 +201,7 @@ div {
   padding-left: 5%;
   padding-right: 5%;
   margin-left: 30%;
+  overflow: auto;
 
   
   
