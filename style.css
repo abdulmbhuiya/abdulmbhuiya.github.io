@@ -1,173 +1,239 @@
-/* Reset */
+/* style.css */
+
+/* Basic reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  
+  box-sizing: border-box; 
   font-family: Arial, sans-serif;
 }
 
-/* Body Styling */
-body {
-  display: flex;
-  height: 100vh;
-  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb);
-  background-attachment: fixed;
+/* Body styling */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb) !important;
+  background-attachment: fixed !important;
 }
 
-/* Layout */
-.row {
-  display: flex;
+
+/* Container to center content */
+.container {
   width: 100%;
-  height: 100vh;
+  max-width: 100%;
+  background: transparent !important;
 }
 
-/* Left Navigation Panel */
-.column.left {
-  width: 25%;
+/* Header + Nav */
+header {
   background: #191515;
-  color: #fff;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: auto;
-  height: 100vh;
-  position: fixed;
+  text-align: left;
+  
 }
 
-.column.left img {
-  border-radius: 50%;
-  margin: 20px 0;
+header h1 {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size:50px;
+  color: #ffffff;
+  border-bottom: 1px #0066cc;
 }
 
-.column.left p {
-  text-align: center;
+
+
+/* Main Content Sections */
+
+
+h2 {
+  margin-bottom: 10px;
+  padding-bottom: 2px;
+  color: #050606;
   font-size: 20px;
-  margin-bottom: 20px;
 }
 
-.side-tab {
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin: 40px 0;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive */
+
+ 
+
+
+div {
+
+  /*background-color: rgb(26, 58, 69);*/
+  text-align: left;
+  background: transparent !important;
+ 
+}
+
+.div1{
+  background: transparent !important;
+  text-align: center;
+  font-size: 24px;
+
+}
+
+.div2{
+  display: block;
+  border: 5px outset rgb(237, 236, 236);
+  background-color: rgb(252, 251, 252);
+  color: #150505;
+  text-align: left;
+  font-size: 19px;
+  margin-left: 2;
+
+}
+.div3 {
+  display: block; width: 100%;
+  width:100%;
+  border: 5px outset rgb(249, 221, 221);
+  background-color: rgb(243, 235, 235);
+  text-align: left;
+  font-size: 15px;
+  padding-left: 3%;
+  color: black;
+}
+
+.div4 {
+  padding: 5px 5%;
+  text-align: left;
+  font-size: 18px;
+  font-family: serif;
+  color: rgb(2, 18, 18);
+
+}
+
+.summary1{
+  
+
+  padding-left: 6%;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(2, 26, 30);
+  
+  
+  
+}
+
+ /* Side Tab Navigation */
+ .side-tab {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 100%; /* Set the width of the sidebar */
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
+  
+  
 }
 
 .side-tab a {
   text-decoration: none;
-  color: #ebf5fb;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 15px;
-  width: 100%;
+  color: rgb(204, 238, 242);
+  margin: 5px 4%;
+  font-size: 25px;
   text-align: center;
-  transition: 0.3s;
-  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px 90px;
+  transition: background-color 0.3s ease;
 }
 
 .side-tab a:hover {
   background-color: #06223d;
 }
 
-/* Right Content Section */
-.column.right {
-  width: 75%;
-  margin-left: 25%;
-  padding: 40px;
-  background-color: #f4f4f4;
-  overflow-y: auto;
-  height: 100vh;
+.side-tab .logo {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
-/* Section Styling */
 .section {
-  padding: 20px;
-  background: white;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+  margin: 0px 0;
+  background: transparent !important;
 }
 
-.section h1 {
-  font-size: 32px;
+.section h2 {
+  margin-top: 0;
   color: #2c3e50;
-  margin-bottom: 10px;
 }
 
 .section p {
-  font-size: 18px;
   line-height: 1.6;
-  color: #333;
 }
 
-/* Expandable Sections */
-.summary1 {
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-  background-color: #5dade2;
-  color: white;
-  border-radius: 5px;
-  margin: 10px 0;
+
+
+
+/*Creating two sections */
+.column {
+  display: flex;  /* Use flexbox to avoid float-based overlap */
+  height: 100vh;  /* Full viewport height */
+  
 }
 
-.summary1:hover {
-  background-color: #2e86c1;
+.left {
+  width: 30%;
+  height: 100vh; 
+  position: fixed;
+  overflow:auto;
+
 }
 
-.div4 {
-  padding: 15px;
-  background: #f4f4f4;
-  border-radius: 5px;
-  margin-top: 10px;
+
+
+.right {
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 30%;
+  overflow-y: auto;
+  
+  
+  
+  
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 14px;
-  color: #666;
-  margin-top: 20px;
-  padding: 10px;
-  background: #191515;
-  color: white;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;}
+
+  
+.event {
+    margin-bottom: 20px;
+}
+.event h3 {
+    margin: 5px 0;
+    color: #34495e;
+}
+.event p {
+    color: #191515;
+    
+}
+.role {
+    font-weight: bold;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .column.left {
-    width: 30%;
-  }
-  .column.right {
-    width: 70%;
-    margin-left: 30%;
-  }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-  }
-  .column.left {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .column.right {
-    width: 100%;
-    margin-left: 0;
-  }
-  .side-tab {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .side-tab a {
-    font-size: 14px;
-    padding: 5px;
-  }
-}
