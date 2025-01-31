@@ -222,17 +222,7 @@ div {
   clear: both;}
 
   
-.event {
-    margin-bottom: 20px;
-}
-.event h3 {
-    margin: 5px 0;
-    color: #34495e;
-}
-.event p {
-    color: #191515;
-    
-}
+
 .role {
     font-weight: bold;
 }
