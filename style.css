@@ -6,6 +6,16 @@
   box-sizing: border-box; 
   font-family: Arial, sans-serif;
 }
+/*Profile image formatting
+.profile-image {
+    width: 60%; /* Adjust the width as needed */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    border-radius: 50%; /* Ensures a circular appearance if needed */
+}
+
+
 
 /* Body styling */
 
