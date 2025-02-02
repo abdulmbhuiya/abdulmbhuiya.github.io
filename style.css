@@ -11,7 +11,7 @@
 /* Body styling */
 
 html, body {
-  height: 100%;
+  height: 60%;
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb) !important;
