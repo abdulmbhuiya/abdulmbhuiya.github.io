@@ -467,20 +467,27 @@
         align-items: flex-start;
         padding: 20px;
         overflow: hidden;
+        position: relative;
     ">
-      <!-- Logo Container (UC Berkeley + UCSF filling width without squeezing) -->
-      <div style="display: flex; width: 100%; margin-bottom: 15px;">
+      <!-- Logo Container (UC Berkeley + UCSF aligned to top-left) -->
+      <div style="
+          display: flex; 
+          width: 100%; 
+          align-items: flex-start; /* Aligns logos to top */
+          margin-bottom: 15px;
+      ">
         <img 
           src="images/UC_Berkeley_logo.png" 
           alt="UC Berkeley Logo" 
-          style="width: 48%; height: auto; object-fit: contain;"
+          style="width: 45%; height: auto; object-fit: contain; margin-right: 5%;"
         >
         <img 
           src="images/UCSF_logo.png" 
           alt="UCSF Logo" 
-          style="width: 48%; height: auto; object-fit: contain;"
+          style="width: 45%; height: auto; object-fit: contain;"
         >
       </div>
+      <!-- ↑↑ Increase "margin-right: 5%;" if you want more space between logos ↑↑ -->
 
       <h3 style="font-size: 30px; margin: 5px 0; text-align: left;">
         Ph.D., Bioengineering
@@ -512,11 +519,13 @@
           padding: 20px;
           overflow: hidden;
       ">
-        <img 
-          src="images/BU_logo.png" 
-          alt="Boston University Logo" 
-          style="width: 90%; height: auto; margin-bottom: 15px; display: block;"
-        >
+        <div style="display: flex; align-items: flex-start; width: 100%; height: auto;">
+          <img 
+            src="images/BU_logo.png" 
+            alt="Boston University Logo" 
+            style="width: 100%; height: auto; object-fit: contain;"
+          >
+        </div>
         <h3 style="font-size: 30px; margin: 5px 0; text-align: left;">
           M.S., Biomedical Engineering
         </h3>
@@ -543,11 +552,13 @@
           padding: 20px;
           overflow: hidden;
       ">
-        <img 
-          src="images/UIUC_logo.png" 
-          alt="UIUC Logo" 
-          style="width: 85%; height: auto; margin-bottom: 15px; display: block;"
-        >
+        <div style="display: flex; align-items: flex-start; width: 100%; height: auto;">
+          <img 
+            src="images/UIUC_logo.png" 
+            alt="UIUC Logo" 
+            style="width: 100%; height: auto; object-fit: contain;"
+          >
+        </div>
         <h3 style="font-size: 30px; margin: 5px 0; text-align: left;">
           B.S., Molecular &amp; Cellular Biology
         </h3>
@@ -562,6 +573,7 @@
     </div>
   </div>
 </section>
+
 
   
   <footer>
