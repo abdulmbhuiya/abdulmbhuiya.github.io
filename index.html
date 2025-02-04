@@ -78,7 +78,15 @@
          </p>
 
 <section>
-  <h2 style="font-size:45px">Education</h2>
+  <h2 style="
+      font-size: 45px; 
+      text-align: center; 
+      background-color: #aed6f1; 
+      padding: 10px; 
+      margin: 0;
+    ">
+    Education
+  </h2>
 
   <!-- Education Section aligned with About Me -->
   <div style="
@@ -97,20 +105,19 @@
         font-family: serif;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; /* Ensures text is at bottom */
+        justify-content: flex-end; /* Aligns text to bottom */
         align-items: flex-start;
         padding: 20px;
         overflow: hidden;
         position: relative;
     ">
-      <!-- Logo Container (UC Berkeley + UCSF centered with proper spacing) -->
+      <!-- Logo Container (UC Berkeley + UCSF centered) -->
       <div style="
           display: flex; 
           width: 100%; 
-          justify-content: center; /* Centers logos */
-          align-items: center; /* Aligns both logos properly */
-          margin-bottom: auto; /* Pushes text to bottom */
-          padding-top: 20px; /* Adjust to move logos down */
+          justify-content: center; /* Centers logos horizontally */
+          align-items: center; /* Centers logos vertically */
+          flex-grow: 1; /* Pushes logos to center */
       ">
         <img 
           src="images/UC_Berkeley_logo.png" 
@@ -134,7 +141,7 @@
         </p>
         <ul style="font-size: 22px; list-style-type: disc; padding-left: 20px; margin: 0;">
           <li>Minor: Development Engineering</li>
-          <li>Assay and Device Development</li>
+          <li>Concentration: Assay and Device Development</li>
           <li>GPA: 3.72/4.00</li>
         </ul>
       </div>
@@ -152,24 +159,24 @@
           font-family: serif;
           display: flex;
           flex-direction: column;
-          justify-content: flex-end; /* Align text to bottom */
+          justify-content: flex-end; /* Aligns text to bottom */
           align-items: flex-start;
           padding: 20px;
           overflow: hidden;
       ">
         <div style="
             display: flex; 
-            align-items: center; /* Ensures full logo visibility */
-            width: 100%; 
-            height: auto;
+            align-items: center; /* Centers logo */
+            justify-content: center; /* Centers logo */
+            flex-grow: 1; /* Pushes logo up */
+            width: 100%;
         ">
           <img 
             src="images/BU_logo.png" 
             alt="Boston University Logo" 
-            style="width: 250px; height: auto; object-fit: contain; margin-top: 10px;"
+            style="width: 250px; height: auto; object-fit: contain;"
           >
         </div>
-        <!-- ↑↑ Adjust "margin-top: 10px;" to shift BU logo down or up if needed ↑↑ -->
 
         <h3 style="font-size: 30px; margin: 5px 0; text-align: left;">
           M.S., Biomedical Engineering
@@ -192,13 +199,14 @@
           font-family: serif;
           display: flex;
           flex-direction: column;
-          align-items: flex-start; /* Aligns UIUC logo to top-left */
+          justify-content: flex-end; /* Aligns text to bottom */
+          align-items: flex-start;
           padding: 20px;
           overflow: hidden;
       ">
         <div style="
             display: flex; 
-            align-items: flex-start; /* Ensures top-left alignment */
+            align-items: flex-start; /* Aligns UIUC logo to top-left */
             width: 100%; 
             height: auto;
         ">
@@ -222,6 +230,7 @@
     </div>
   </div>
 </section>
+
   
   <footer>
     <p>&copy; 2024 Abdul Muyeed Bhuiya. All rights reserved.</p>
