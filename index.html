@@ -436,15 +436,7 @@
 </section>
 
 <section>
-  <h2 style="
-      font-size: 45px; 
-      text-align: center; 
-      background-color: #aed6f1; 
-      padding: 10px; 
-      margin: 0;
-    ">
-    Education
-  </h2>
+  <h2 style="font-size:45px">Education</h2>
 
   <!-- Education Section aligned with About Me -->
   <div style="
@@ -463,17 +455,18 @@
         font-family: serif;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* Align text to bottom */
+        justify-content: flex-start; /* Ensures logos are at the top */
         align-items: flex-start;
         padding: 20px;
         overflow: hidden;
         position: relative;
     ">
-      <!-- Logo Container (UC Berkeley + UCSF aligned to top-left) -->
+      <!-- Logo Container (UC Berkeley + UCSF aligned to top & centered) -->
       <div style="
           display: flex; 
           width: 100%; 
-          align-items: flex-start; /* Aligns logos to top */
+          align-items: center; /* Ensures both logos are middle-aligned */
+          justify-content: flex-start; /* Aligns to left */
           margin-bottom: 15px;
       ">
         <img 
@@ -519,13 +512,20 @@
           padding: 20px;
           overflow: hidden;
       ">
-        <div style="display: flex; align-items: flex-start; width: 100%; height: auto;">
+        <div style="
+            display: flex; 
+            align-items: center; /* Ensures full logo visibility */
+            width: 100%; 
+            height: auto;
+        ">
           <img 
             src="images/BU_logo.png" 
             alt="Boston University Logo" 
-            style="width: 100%; height: auto; object-fit: contain;"
+            style="width: 100%; height: auto; object-fit: contain; margin-top: 10px;"
           >
         </div>
+        <!-- ↑↑ Adjust "margin-top: 10px;" to shift BU logo down or up if needed ↑↑ -->
+
         <h3 style="font-size: 30px; margin: 5px 0; text-align: left;">
           M.S., Biomedical Engineering
         </h3>
@@ -552,7 +552,12 @@
           padding: 20px;
           overflow: hidden;
       ">
-        <div style="display: flex; align-items: flex-start; width: 100%; height: auto;">
+        <div style="
+            display: flex; 
+            align-items: center; /* Ensures full logo visibility */
+            width: 100%; 
+            height: auto;
+        ">
           <img 
             src="images/UIUC_logo.png" 
             alt="UIUC Logo" 
@@ -573,6 +578,7 @@
     </div>
   </div>
 </section>
+
 
 
   
