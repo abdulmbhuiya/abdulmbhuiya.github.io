@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapsible Menu Preview</title>
+  <style>
+    /* Sidebar Styling */
+    .sidebar {
+      width: 100%;
+      max-width: 250px;
+      background: #191515;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Button Styling */
+    .toggle-menu {
+      background-color: #06223d;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+    }
+
+    /* Hidden Menu (Default) */
+    .menu {
+      display: none;
+      flex-direction: column;
+    }
+
+    /* Menu Links */
+    .menu a {
+      text-decoration: none;
+      color: rgb(204, 238, 242);
+      padding: 10px;
+      display: block;
+    }
+
+    .menu a:hover {
+      background-color: #06223d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Collapsible Navigation Menu -->
+  <div class="sidebar">
+    <button class="toggle-menu" onclick="toggleMenu()">☰ Sections</button>
+    <div class="menu" id="menu">
+      <a href="#">About Me</a>
+      <a href="#">Skills</a>
+      <a href="#">Work Experience</a>
+      <a href="#">Publications</a>
+      <a href="#">Invited Talks & Posters</a>
+      <a href="#">Awards & Honors</a>
+      <a href="#">Teaching & Mentoring</a>
+      <a href="#">Extracurricular</a>
+      <a href="#">Coursework & Projects</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.style.display === "flex") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "flex";
+      }
+    }
+  </script>
+
+</body>
+</html>
