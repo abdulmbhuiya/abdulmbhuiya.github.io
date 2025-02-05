@@ -13,6 +13,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  display: flex;
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb) !important;
