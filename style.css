@@ -15,7 +15,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb) !important;
+  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb) !important;
   background-attachment: fixed !important;
 }
 
@@ -154,7 +154,7 @@ div {
   text-decoration: none;
   color: rgb(204, 238, 242);
   margin: 5px 4%;
-  font-size: 15px;
+  font-size: 90%;
   text-align: center;
   font-weight: bold;
   padding: 1% 2%;
@@ -195,7 +195,7 @@ div {
 }
 
 .left {
-  width: 35%;
+  width: 30%;
   height: 100%;
   left: 0;
   top: 0;
@@ -213,9 +213,9 @@ div {
 }
 
 .right {
-  width: 65%;
+  width: 70%;
   height: 100%;
-  padding-left: 5%;
+  padding-left: 10%;
   padding-right: 5%;
   margin-left: 30%;
   overflow:auto;
