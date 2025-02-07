@@ -12,11 +12,9 @@
 
 html, body {
   height: 100%;
-  width: 100%;
-  display: flex;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb) !important;
+  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb) !important;
   background-attachment: fixed !important;
 }
 
@@ -36,13 +34,10 @@ header {
   
 }
 
-.image_C {
-  width: 60%; /* 1.5x original size */
-  height: auto;
-  display: block;
+.image_C{
+  width: 40%; height: auto; display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: none; /* Ensures no size restrictions */
 }
 
 header h1 {
@@ -64,6 +59,8 @@ h2 {
   color: #050606;
   font-size: 20px;
 }
+
+
 
 
 
@@ -136,29 +133,27 @@ div {
   font-size: 20px;
   color: rgb(2, 26, 30);
   
-  
-  
 }
 
  /* Side Tab Navigation */
  .side-tab {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 100%; /* Set the width of the sidebar */
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   
 }
 
 .side-tab a {
   text-decoration: none;
   color: rgb(204, 238, 242);
-  margin: 1% 4%;
-  font-size: 100%;
+  margin: 5px 4%;
+  font-size: 25px;
   text-align: center;
   font-weight: bold;
-  padding: 1% 5%;
+  padding: 5px 90px;
   transition: background-color 0.3s ease;
 }
 
@@ -167,7 +162,7 @@ div {
 }
 
 .side-tab .logo {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 30px;
 }
 
@@ -186,18 +181,14 @@ div {
   line-height: 1.6;
 }
 
-
-
-
 /*Creating two sections */
 .column {
   float: left;
-  
 }
 
 .left {
   width: 30%;
-  height: 100%;
+  height: 100vh;
   left: 0;
   top: 0;
   bottom: 0;
@@ -206,9 +197,8 @@ div {
   /* Hide scrollbar in Webkit-based browsers (Chrome, Safari) */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE & Edge */
-
-  
 }
+
 .left::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
@@ -216,23 +206,18 @@ div {
 .right {
   width: 70%;
   height: 100%;
-  padding-left: 11%;
+  padding-left: 5%;
   padding-right: 5%;
   margin-left: 30%;
-  overflow:auto;
-  
-  
-  
-  
+  overflow: auto;
 }
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
-  clear: both;}
-
-  
+  clear: both;
+}
 
 .role {
     font-weight: bold;
@@ -242,5 +227,4 @@ div {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
 }
