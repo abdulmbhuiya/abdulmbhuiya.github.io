@@ -1,91 +1,230 @@
+/* style.css */
+
 /* Basic reset */
 * {
-  box-sizing: border-box;
+  
+  box-sizing: border-box; 
   font-family: Arial, sans-serif;
 }
 
+
 /* Body styling */
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb);
-  background-attachment: fixed;
+  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb) !important;
+  background-attachment: fixed !important;
 }
+
 
 /* Container to center content */
 .container {
   width: 100%;
   max-width: 100%;
-  background: transparent;
+  background: transparent !important;
 }
 
-/* Sidebar - Fixed, No Scroll */
-.left {
-  width: 30%;
-  height: 100vh; /* Full viewport height */
-  left: 0;
-  top: 0;
-  bottom: 0;
-  position: fixed;
-  overflow: hidden; /* Prevents scrolling */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; /* Evenly distribute sections */
-  padding: 10px 0;
+/* Header + Nav */
+header {
+  background: #191515;
+  padding: 20px;
+  text-align: left;
+  
 }
 
-/* Profile Image */
-.image_C {
-  width: 50%; /* Adjusted for better spacing */
-  height: auto;
-  display: block;
+.image_C{
+  width: 40%; height: auto; display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Sidebar Sections */
-.side-tab {
-  width: 100%;
+header h1 {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size:50px;
+  color: #ffffff;
+  border-bottom: 1px #0066cc;
+}
+
+
+
+/* Main Content Sections */
+
+
+h2 {
+  margin-bottom: 10px;
+  padding-bottom: 2px;
+  color: #050606;
+  font-size: 20px;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin: 40px 0;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive */
+
+ 
+
+
+div {
+
+  /*background-color: rgb(26, 58, 69);*/
+  text-align: left;
+  background: transparent !important;
+ 
+}
+
+.div1{
+  background: transparent !important;
+  text-align: center;
+  font-size: 24px;
+
+}
+
+.div2{
+  display: block;
+  border: 5px outset rgb(237, 236, 236);
+  background-color: rgb(252, 251, 252);
+  color: #150505;
+  text-align: left;
+  font-size: 19px;
+  margin-left: 2;
+
+}
+.div3 {
+  display: block; width: 100%;
+  width:100%;
+  border: 5px outset rgb(249, 221, 221);
+  background-color: rgb(243, 235, 235);
+  text-align: left;
+  font-size: 15px;
+  padding-left: 3%;
+  color: black;
+}
+
+.div4 {
+  padding: 5px 5%;
+  text-align: left;
+  font-size: 18px;
+  font-family: serif;
+  color: rgb(2, 18, 18);
+
+}
+
+.summary1{
+  
+
+  padding-left: 6%;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(2, 26, 30);
+  
+}
+
+ /* Side Tab Navigation */
+ .side-tab {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 100%; /* Set the width of the sidebar */
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex-grow: 1;
+  
 }
 
-/* Sidebar Links */
 .side-tab a {
   text-decoration: none;
   color: rgb(204, 238, 242);
-  font-size: 16px; /* Reduced from 25px */
-  padding: 6px 10px; /* Adjusted for better fit */
-  width: 90%;
+  margin: 5px 4%;
+  font-size: 25px;
   text-align: center;
   font-weight: bold;
+  padding: 5px 90px;
   transition: background-color 0.3s ease;
 }
 
-/* Hover Effect */
 .side-tab a:hover {
   background-color: #06223d;
 }
 
-/* Right Section (Content Scrolls, Sidebar Stays Fixed) */
+.side-tab .logo {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.section {
+  padding: 10px 10px;
+  margin: 0px 0;
+  background: transparent !important;
+}
+
+.section h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.section p {
+  line-height: 1.6;
+}
+
+/*Creating two sections */
+.column {
+  float: left;
+}
+
+.left {
+  width: 30%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  overflow-y: auto;
+  /* Hide scrollbar in Webkit-based browsers (Chrome, Safari) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.left::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 .right {
   width: 70%;
-  height: 100vh;
+  height: 100%;
   padding-left: 5%;
   padding-right: 5%;
   margin-left: 30%;
-  overflow-y: auto; /* Enables scrolling only on the right */
+  overflow: auto;
 }
 
-/* Responsive Design for Smaller Screens */
-@media (max-height: 700px) {
-  .side-tab a {
-    font-size: 14px; /* Further reduce size on small screens */
-    padding: 4px 8px;
-  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.role {
+    font-weight: bold;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
