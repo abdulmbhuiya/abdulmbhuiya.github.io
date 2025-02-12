@@ -1,69 +1,127 @@
-/* style.css */
-
-/* Basic reset */
+/* Basic Reset */
 * {
-  
-  box-sizing: border-box; 
-  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-/* Body styling */
-
+/* Body Styling */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb, #ebf5fb) !important;
-  background-attachment: fixed !important;
+  background: linear-gradient(to right, #154360, #21618c, #2e86c1, #5dade2, #aed6f1, #ebf5fb);
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
 }
 
-
-/* Container to center content */
+/* Container */
 .container {
   width: 100%;
   max-width: 100%;
-  background: transparent !important;
+  background: transparent;
 }
 
-/* Header + Nav */
-header {
-  background: #191515;
+/* Sidebar */
+.column.left {
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  background: #154360;
+  padding: 20px 0;
+}
+
+.column.left h1 {
+  text-align: center;
+  color: #fafafa;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.image_C {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.side-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-tab a {
+  text-decoration: none;
+  color: #fafafa;
+  margin: 10px 0;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.side-tab a:hover {
+  background-color: #06223d;
+}
+
+/* Main Content */
+.column.right {
+  width: 70%;
+  margin-left: 30%;
+  padding: 20px 5%;
+  overflow: auto;
+}
+
+/* Education Section */
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.education-box {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  text-align: left;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.image_C{
-  width: 60%; height: auto; display: block;
-  margin-left: auto;
-  margin-right: auto;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-header h1 {
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.education-text h3 {
+  font-size: 30px;
   margin-bottom: 10px;
-  padding-bottom: 5px;
-  font-size:50px;
-  color: #ffffff;
-  border-bottom: 1px #0066cc;
 }
 
-
-
-/* Main Content Sections */
-
-
-h2 {
+.education-text p {
+  font-size: 22px;
+  font-weight: bold;
   margin-bottom: 10px;
-  padding-bottom: 2px;
-  color: #050606;
-  font-size: 20px;
 }
 
-
-
-
-
+.education-text ul {
+  font-size: 22px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
 
 /* Footer */
 footer {
@@ -75,156 +133,55 @@ footer {
   border-top: 1px solid #ccc;
 }
 
-/* Responsive */
-
- 
-
-
-div {
-
-  /*background-color: rgb(26, 58, 69);*/
-  text-align: left;
-  background: transparent !important;
- 
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .column.left {
+    width: 35%;
+  }
+  .side-tab a {
+    font-size: 22px;
+    padding: 10px 15px;
+  }
 }
 
-.div1{
-  background: transparent !important;
-  text-align: center;
-  font-size: 24px;
-
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .column.left, .column.right {
+    width: 100%;
+    margin-left: 0;
+    position: static;
+  }
+  .column.left {
+    padding: 20px;
+  }
+  .side-tab {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .side-tab a {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+  .education-container {
+    flex-direction: column;
+  }
 }
 
-.div2{
-  display: block;
-  border: 5px outset rgb(237, 236, 236);
-  background-color: rgb(252, 251, 252);
-  color: #150505;
-  text-align: left;
-  font-size: 19px;
-  margin-left: 2;
-
-}
-.div3 {
-  display: block; width: 100%;
-  width:100%;
-  border: 5px outset rgb(249, 221, 221);
-  background-color: rgb(243, 235, 235);
-  text-align: left;
-  font-size: 15px;
-  padding-left: 3%;
-  color: black;
-}
-
-.div4 {
-  padding: 5px 5%;
-  text-align: left;
-  font-size: 18px;
-  font-family: serif;
-  color: rgb(2, 18, 18);
-
-}
-
-.summary1{
-  
-
-  padding-left: 6%;
-  cursor: pointer;
-  font-size: 20px;
-  color: rgb(2, 26, 30);
-  
-}
-
- /* Side Tab Navigation */
- .side-tab {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 100%; /* Set the width of the sidebar */
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-.side-tab a {
-  text-decoration: none;
-  color: rgb(204, 238, 242);
-  margin: 5px 4%;
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
-  padding: 5px 90px;
-  transition: background-color 0.3s ease;
-}
-
-.side-tab a:hover {
-  background-color: #06223d;
-}
-
-.side-tab .logo {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
-.section {
-  padding: 10px 10px;
-  margin: 0px 0;
-  background: transparent !important;
-}
-
-.section h2 {
-  margin-top: 0;
-  color: #2c3e50;
-}
-
-.section p {
-  line-height: 1.6;
-}
-
-/*Creating two sections */
-.column {
-  float: left;
-}
-
-.left {
-  width: 30%;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  position: fixed;
-  overflow-y: auto;
-  /* Hide scrollbar in Webkit-based browsers (Chrome, Safari) */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE & Edge */
-}
-
-.left::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
-
-.right {
-  width: 70%;
-  height: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-left: 30%;
-  overflow: auto;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.role {
-    font-weight: bold;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px !important;
+  }
+  h2 {
+    font-size: 28px !important;
+  }
+  p, li {
+    font-size: 18px !important;
+  }
+  .side-tab a {
+    font-size: 16px !important;
+    padding: 8px 10px !important;
+  }
 }
