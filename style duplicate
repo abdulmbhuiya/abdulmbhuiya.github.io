@@ -34,13 +34,10 @@ header {
   
 }
 
-.image_C {
-  width: 60%; /* 1.5x original size */
-  height: auto;
-  display: block;
+.image_C{
+  width: 60%; height: auto; display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: none; /* Ensures no size restrictions */
 }
 
 header h1 {
@@ -62,6 +59,8 @@ h2 {
   color: #050606;
   font-size: 20px;
 }
+
+
 
 
 
@@ -134,8 +133,6 @@ div {
   font-size: 20px;
   color: rgb(2, 26, 30);
   
-  
-  
 }
 
  /* Side Tab Navigation */
@@ -147,14 +144,13 @@ div {
   flex-direction: column;
   align-items: center;
   
-  
 }
 
 .side-tab a {
   text-decoration: none;
   color: rgb(204, 238, 242);
   margin: 5px 4%;
-  font-size: 22px;
+  font-size: 25px;
   text-align: center;
   font-weight: bold;
   padding: 5px 90px;
@@ -166,7 +162,7 @@ div {
 }
 
 .side-tab .logo {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 30px;
 }
 
@@ -185,13 +181,9 @@ div {
   line-height: 1.6;
 }
 
-
-
-
 /*Creating two sections */
 .column {
   float: left;
-  
 }
 
 .left {
@@ -205,9 +197,8 @@ div {
   /* Hide scrollbar in Webkit-based browsers (Chrome, Safari) */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE & Edge */
-
-  
 }
+
 .left::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
@@ -219,19 +210,14 @@ div {
   padding-right: 5%;
   margin-left: 30%;
   overflow: auto;
-  
-  
-  
-  
 }
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
-  clear: both;}
-
-  
+  clear: both;
+}
 
 .role {
     font-weight: bold;
@@ -241,5 +227,4 @@ div {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
 }
